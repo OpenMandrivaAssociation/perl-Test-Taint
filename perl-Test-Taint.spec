@@ -1,15 +1,15 @@
 %define upstream_name    Test-Taint
-%define upstream_version 1.04
+%define upstream_version 1.06
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:	3
+Version:    %perl_convert_version 1.06
+Release:	1
 
 Summary:    Tools to test taintedness
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/Test/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:    http://www.cpan.org/modules/by-module/Test/Test-Taint-1.06.tar.gz
 
 BuildRequires: perl(Scalar::Util)
 BuildRequires: perl(Test::Builder)
@@ -75,3 +75,4 @@ rm -rf %buildroot
 
 * Wed Jul 14 2010 cpan2dist 1.04-1mdv
 - initial mdv release, generated with cpan2dist
+
