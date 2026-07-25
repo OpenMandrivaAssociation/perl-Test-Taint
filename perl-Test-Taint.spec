@@ -1,15 +1,15 @@
 %define upstream_name    Test-Taint
-%define upstream_version 1.06
+%define upstream_version 1.08
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version 1.06
-Release:	3
+Version:    %{upstream_version}
+Release:	1
 
 Summary:    Tools to test taintedness
 License:    GPL+ or Artistic
 Group:      Development/Perl
-Url:        https://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/Test/Test-Taint-1.06.tar.gz
+Url:        https://github.com/petdance/test-taint
+Source0:    https://cpan.metacpan.org/authors/id/P/PE/PETDANCE/Test-Taint-1.08.tar.gz
 
 BuildRequires:	make
 BuildRequires: perl(Scalar::Util)
